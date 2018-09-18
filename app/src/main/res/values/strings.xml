@@ -1,7 +1,13 @@
 <resources>
     <string name="app_name">Blackjack</string>
 
-    <string name="play_button">Play</string>
+    <string name="play_button">login</string>
+    <string name="register_button">register</string>
+    <string name="create_button">create account</string>
+    <string name="cancel_button">cancel</string>
+    <string name="account_textview">account </string>
+    <string name="passsword_textview">password</string>
+    <string name="passwrord_again_textview">confirm password</string>
     <string name="title_activity_game">GameActivity</string>
     <string name="dealer_text">Dealer\'s hand:</string>
     <string name="card_hint">A playing card</string>
@@ -10,6 +16,7 @@
     <string name="player_text">Your hand:</string>
     <string name="player_first_card_hint">Your first card</string>
     <string name="player_second_card_hint">Your second card</string>
+    <string name="store">Store</string>
     <string name="your_money">$%d</string>
     <string name="decrement_bet">- $%d</string>
     <string name="initial_decrement_bet">- $100</string>

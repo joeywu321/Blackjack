@@ -2,8 +2,8 @@ apply plugin: 'com.android.application'
 apply plugin: 'me.tatarka.retrolambda'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 26
+    buildToolsVersion "25.0.3"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -11,9 +11,9 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.bryancapps.blackjack"
+        applicationId "com.evatar.blackjack"
         minSdkVersion 19
-        targetSdkVersion 25
+        targetSdkVersion 26
         versionCode 3
         versionName "1.0"
         vectorDrawables.useSupportLibrary = true
@@ -27,26 +27,21 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     // Android Support Libraries
-    compile 'com.android.support:appcompat-v7:25.1.0'
-    compile 'com.android.support:recyclerview-v7:25.1.0'
-
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
     // Butter Knife
     compile 'com.jakewharton:butterknife:8.4.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
-
     // RxJava
     compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
     compile 'io.reactivex.rxjava2:rxjava:2.0.3'
-
     // Auto Value
-    provided "com.google.auto.value:auto-value:1.2"
+    provided 'com.google.auto.value:auto-value:1.2'
     annotationProcessor "com.google.auto.value:auto-value:1.2"
-
     compile 'com.google.guava:guava:20.0'
-    compile "com.andkulikov:transitionseverywhere:1.7.0"
-
+    compile 'com.andkulikov:transitionseverywhere:1.7.0'
     testCompile 'junit:junit:4.12'
+    compile project(':bcllib')
 }

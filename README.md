@@ -1,7 +1,7 @@
-This is an Android Studio project of my Android game Blackjack. It is a version of the casino game of the same name.
+This is an Android Studio project of Android game Blackjack. It is a version of the casino game of the same name.
 All the main aspects of the game are functional.
 
-Created by Bryan Capps.
+Created by Joey Wu.
 The card images are taken from the following webpage: https://code.google.com/archive/p/vector-playing-cards/
 
 <img src="screenshot1.png" width="280" />
